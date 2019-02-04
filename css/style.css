@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    background-color: #eee;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 80vw;
+    margin:auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+header{
+    width:100%;
+    background-color: #fffd;
+    position: fixed;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav img{
+    width: 200px;
+    height: 100px;
+}
+
+.menu{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding:0;
+    flex:1;
+    margin-left: 1vw;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 1vw;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #312F2F;
+    transition: color 500ms ease;
+}
+
+.menu li a:hover{
+    color: #84DCCF;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    right:0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    color:#ccc;
+    display:block;
+    transition: 0.3s;
+}
+
+.side-nav p{
+    color:#ccc;
+    transition:0.3s;
+    font-size: 2rem;
+}
+
+.side-nav p:hover{
+    color:#84DCCF;
+}
+
+.side-nav a:hover{
+    color:#84DCCF;
+}
+
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size: 2rem;
+    margin-left:50px;
+}
+/* Landing Page */
+.showcase{
+    width:100%;
+    height: 100vh;
+}
+
+.showcontainer{
+    height:100%;
+}
+.showcase-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://source.unsplash.com/1600x900/?nature,water);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100%;
+}
+
+.showcase-text{
+    font-size:3rem;
+    text-align: center;
+}
+
+/* Product Display */
+
+.product{
+    background-color: white;
+    padding-bottom: 3vh;
+}
+
+.product-head{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#84DCCF;
+}
+
+.product-display{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+}
+
+.product-box{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.product-box-head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px #757780 solid;
+}
+
+.product-segment{
+    display:flex;
+    flex-direction: row;
+    margin: 1vh 0;
+    padding-bottom: 1vh;
+    border-bottom: 3px #6CCFF6 dashed;
+    transition: background 300ms ease;
+    padding: 10px;
+}
+
+.product-segment:hover{
+    background-color: #eee;
+}
+
+.product-image{
+    width:100%;
+    margin-right: 1vw;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+}
+
+.product-description{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-description h3{
+    margin:0;
+}
+
+.btn{
+    text-decoration: none;
+    color:black;
+    border: 2px #84DCCF solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #84DCCF;
+    transition: background 500ms ease;
+}
+
+.btn:hover{
+    background-color: #6CCFF6;
+    border-color: #6CCFF6;
+}
+
+/* Blog Highlight */
+.blog-highlight{
+    background-color: #312F2F;
+}
+.blog-highlight-head{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A6D9F7;
+}
+
+.blog-highlight-description{
+    color:#eeeeee;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+}
+
+/* Media Query */
+
+@media(min-width:1300px){
+    .product-display{
+        flex-direction: row;
+    }
+    .product-box{
+        width: 40%;
+    }
+}
+
+@media(max-width:780px){
+    .menu{
+        display:none;
+    }
+}

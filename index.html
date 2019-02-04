@@ -4,10 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devSett</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <title>devSett | Games and Programs</title>
 </head>
 <body>
-    <h1>test</h1>
-    <h2>why is this not showing up?</h2>
+    <header>
+        <div class="container" >
+            <nav>
+                <a href="index.html"><img src="img/logo.png"></a>
+                <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                <span class="open-slide">
+                    <div onclick="openSlideMenu()">
+                        <svg width="30" height="30" id="menuIcon" onmouseover="changeColor()" onmouseout="revertColor()">
+                            <path id="one" d="M0,5 30,5" stroke="black" stroke-width="5"/>
+                            <path id="two" d="M0,14 30,14" stroke="black" stroke-width="5"/>
+                            <path id="three" d="M0,23 30,23" stroke="black" stroke-width="5"/>
+                        </svg>
+                    </div>
+                </span>
+            </nav>
+        </div>
+      </header>
+
+    <div id="side-menu" class="side-nav">
+        <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
+        <a href="">Abouts</a>
+        <a href="">Blog</a>
+        <a href="">Projects</a>
+        <a href="">Contacts</a>
+    </div>
+
+      <div class="showcase">
+          <div class="showcontainer">
+              <div class="showcase-image">
+                  <div class="showcase-text">
+                    <h1>devSett</h1>
+                    <h2>Games and Programs</h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="product">
+            <div class="product-head">
+                    <h1>Products</h1>
+                </div>
+          <div class="container">
+                <div class="product-display">
+                    <div class="product-box">
+                        <div class="product-box-head">
+                            <h1>Games</h1>
+                        </div>
+                        <div class="product-segment">
+                            <div class="product-image">
+                                <img src="img/LogoBeta.png" alt="">
+                            </div>
+                            <div class="product-description">
+                                <h3>Platformer Game</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Dignissimos explicabo accusamus corporis ab, itaque repellat veritatis voluptatum excepturi</p>
+                                <div class="product-btn">
+                                    <a href="#" class="btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-segment">
+                                <div class="product-image">
+                                    <img src="img/LogoBeta.png" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <h3>Platformer Game</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Dignissimos explicabo accusamus corporis ab, itaque repellat veritatis voluptatum excepturi</p>
+                                    <div class="product-btn">
+                                        <a href="#" class="btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="product-box">
+                            <div class="product-box-head">
+                                <h1>Games</h1>
+                            </div>
+                            <div class="product-segment">
+                                <div class="product-image">
+                                    <img src="img/LogoBeta.png" alt="">
+                                </div>
+                                <div class="product-description">
+                                    <h3>Platformer Game</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Dignissimos explicabo accusamus corporis ab, itaque repellat veritatis voluptatum excepturi</p>
+                                    <div class="product-btn">
+                                        <a href="#" class="btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-segment">
+                                    <div class="product-image">
+                                        <img src="img/LogoBeta.png" alt="">
+                                    </div>
+                                    <div class="product-description">
+                                        <h3>Platformer Game</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Dignissimos explicabo accusamus corporis ab, itaque repellat veritatis voluptatum excepturi</p>
+                                        <div class="product-btn">
+                                            <a href="#" class="btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+      </div>
+
+      <div class="blog-highlight">
+        <div class="blog-highlight-head">
+            <h1>Development Blog</h1>
+        </div>
+          <div class="container">
+            <div class="blog-highlight-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis aliquid nemo sunt! Unde eaque tempore doloribus sed! Cumque, quos.</p>
+            </div>
+        </div>
+      </div>
+
+      
+      <footer>
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p>Email: toteeset1@gmail.com</p>
+          <p>Phone: 619-806-6677</p>
+        </div>
+      </footer>
+
+      <script>
+          function openSlideMenu(){
+              document.getElementById('side-menu').style.width = '250px';
+          }
+          function closeSlideMenu(){
+              document.getElementById('side-menu').style.width = '0';
+          }
+          function changeColor(){
+              document.getElementById('one').style.stroke = '#84DCCF';
+              document.getElementById('two').style.stroke = '#84DCCF';
+              document.getElementById('three').style.stroke = '#84DCCF';
+          }
+          function revertColor(){
+              document.getElementById('one').style.stroke = '#312F2F';
+              document.getElementById('two').style.stroke = '#312F2F';
+              document.getElementById('three').style.stroke = '#312F2F';
+          }
+      </script>
 </body>
 </html>

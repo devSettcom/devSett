@@ -1,0 +1,5 @@
+black: #312F2F
+gree:#84DCCF
+lightblue: A6D9F7
+blue: #6CCFF6
+grey:#757780
