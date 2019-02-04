@@ -238,6 +238,111 @@ footer{
     text-align: center;
 }
 
+/*--------------------About--------------------------*/
+
+.about-landing{
+    display:flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://source.unsplash.com/1600x900/?computer);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px #A6D9F7 solid;
+}
+
+.about-landing-head{
+    font-size: 3rem;
+    color:#111;
+}
+
+.about-mission{
+    display:flex;
+    background-color:#A6D9F7;
+    background-image:url(https://source.unsplash.com/1600x900/?robot);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align:center;
+    width: 100%;
+    height: 80vh;
+    border-bottom: 5px #84DCCF solid;
+}
+
+.about-mission-description{
+    font-size:1.5rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.about-mission-description p, .about-mission-description h1{
+    color: #eee;
+}
+
+.about-left{
+    padding: 2vh 2vw;
+    width:100%;
+    background-color:#84DCCF;
+}
+
+.left-description{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-description-image{
+    width: 100%;
+    height: 30vh;
+    background-image:url(https://source.unsplash.com/1600x900/?videogame);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 2vh 2vw;
+    border-radius: 50px;
+    border: 5px #312F2F solid;
+}
+
+.left-description-text{
+    text-align: center;
+    border-top: 6px #6CCFF6 dashed;
+    border-bottom: 6px #6CCFF6 dashed;
+    margin-right: 2vw;
+}
+
+.about-right{
+    padding: 2vh 2vw;
+    width:100%;
+    background-color:#6CCFF6;
+}
+
+.right-description{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+
+.right-description-image{
+    width: 100%;
+    height: 30vh;
+    background-image:url(https://source.unsplash.com/1600x900/?website);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 2vh 2vw;
+    border-radius: 50px;
+    border: 5px #312F2F solid;
+}
+
+.right-description-text{
+    text-align: center;
+    border-top: 6px #84DCCF dashed;
+    border-bottom: 6px #84DCCF dashed;
+}
 /* Media Query */
 
 @media(min-width:1300px){
@@ -246,6 +351,25 @@ footer{
     }
     .product-box{
         width: 40%;
+    }
+
+    .left-description{
+        flex-direction: row;
+    }
+
+    .right-description{
+        flex-direction: row;
+    }
+
+    .about-mission-description{
+        font-size:2rem;
+    }
+    .left-description-image{
+        height: 60vh;
+    }
+
+    .right-description-image{
+        height: 60vh;
     }
 }
 

@@ -16,8 +16,8 @@
                 <ul class="menu">
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
                 </ul>
                 <span class="open-slide">
                     <div onclick="openSlideMenu()">
@@ -34,10 +34,11 @@
 
     <div id="side-menu" class="side-nav">
         <p class="btn-close" onclick="closeSlideMenu()">&times;</p>
-        <a href="">Abouts</a>
-        <a href="">Blog</a>
-        <a href="">Projects</a>
-        <a href="">Contacts</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">Abouts</a>
+        <a href="blog.html">Blog</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contacts</a>
     </div>
 
       <div class="showcase">
@@ -151,23 +152,6 @@
         </div>
       </footer>
 
-      <script>
-          function openSlideMenu(){
-              document.getElementById('side-menu').style.width = '250px';
-          }
-          function closeSlideMenu(){
-              document.getElementById('side-menu').style.width = '0';
-          }
-          function changeColor(){
-              document.getElementById('one').style.stroke = '#84DCCF';
-              document.getElementById('two').style.stroke = '#84DCCF';
-              document.getElementById('three').style.stroke = '#84DCCF';
-          }
-          function revertColor(){
-              document.getElementById('one').style.stroke = '#312F2F';
-              document.getElementById('two').style.stroke = '#312F2F';
-              document.getElementById('three').style.stroke = '#312F2F';
-          }
-      </script>
+      <script src="js/main.js"></script>
 </body>
 </html>
