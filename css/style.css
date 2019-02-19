@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body{
-    background-color: #eee;
+    background-color: #fffd;
     margin:0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -282,7 +282,7 @@ footer{
 }
 
 .about-left{
-    padding: 2vh 2vw;
+    padding: 2vh 0;
     width:100%;
     background-color:#84DCCF;
 }
@@ -314,7 +314,7 @@ footer{
 }
 
 .about-right{
-    padding: 2vh 2vw;
+    padding: 2vh 0;
     width:100%;
     background-color:#6CCFF6;
 }
@@ -342,6 +342,129 @@ footer{
     text-align: center;
     border-top: 6px #84DCCF dashed;
     border-bottom: 6px #84DCCF dashed;
+}
+
+/* --------------Blog------------------------*/
+.blog{
+    width: 100%;
+}
+.blog-head{
+    background-image:url(https://source.unsplash.com/1600x900/?writing);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-head h1{
+    margin: 0;
+    font-size: 3rem;
+    color: #eee;
+}
+
+.blog-description{
+    background-color: #312F2F;
+}
+
+.blog-description h2{
+    margin:0;
+    text-align: center;
+    font-size: 2rem;
+    color: #eee;
+}
+.post{
+    background-color: #eeee;
+    padding: 1vh 1vw;
+    display: flex;
+}
+
+.post-area{
+    margin-right: 1vw;
+    width: 85%;
+}
+
+.post-segment{
+    background-color: #fffd;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+}
+
+.post-segment img{
+    width: 100%;
+    height: 60vh;
+}
+
+.post-archive h1{
+    text-align: center;
+}
+
+.post-archive ul li a{
+    text-decoration: none;
+    color: #312F2F;
+}
+
+h2, h1,h3{
+    margin:0;
+}
+
+/*-----------------------------Services--------------------------*/
+.service{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-fee{
+    background-color:white;
+}
+
+.service-fee-head{
+    border-bottom: 5px #84DCCF solid;
+    text-align: center;
+    background-color: #84DCCF;
+    padding: 1vh 1vw;
+    margin-bottom: 1vh;
+}
+
+.service-fee-display{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service-fee-box{
+    border: 3px #757780 solid;
+    width: 45%;
+    margin-bottom: 1vh;
+}
+
+.service-fee-box-head{
+    text-align: center;
+    background-color: #A6D9F7;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+    padding: 1vh 1vw;
+}
+
+.service-fee-box-description h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.service-fee-box-description p{
+    text-align: center;
+    border-bottom: 1px #757780 solid;
+    margin: 1vh 10% 1vh 10%;
+}
+
+.service-discount{
+    background-color: #84DCCF;
+    padding: 1vh 1vw;
+    text-align: center;
 }
 /* Media Query */
 
